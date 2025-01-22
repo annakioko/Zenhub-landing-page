@@ -8,11 +8,11 @@ import spa6 from "../assets/spa6.jpg";
 import spa7 from "../assets/spa7.jpg";
 
 const galleryImages = [
-  { src: spa3, name: "Spa Experience 3" },
-  { src: spa4, name: "Spa Experience 4" },
-  { src: spa5, name: "Spa Experience 5" },
-  { src: spa6, name: "Spa Experience 6" },
-  { src: spa7, name: "Spa Experience 7" },
+  { src: spa3, name: "Epsom salt baths" },
+  { src: spa4, name: "Finnish sauna" },
+  { src: spa5, name: "Deep Tissue Massage" },
+  { src: spa6, name: "2nd Finnish sauna" },
+  { src: spa7, name: "Aromatherapy Massage" },
   { src: sauna, name: "Sauna" },
 ];
 
@@ -33,7 +33,8 @@ const Gallery = () => {
 
   return (
     <section className="w-full flex flex-col items-center py-8 bg-blue">
-      <h2 className="font-serif mb-6 text-7xl text-gold">GALLERY</h2>
+      <h2 className="font-serif mb-1 text-7xl text-gold">GALLERY</h2>
+      <div className="w-96 h-1 bg-gold mx-auto mb-8"></div>
       <div className="flex w-3/4 justify-between items-center space-x-4">
         {/* Left Section: Large Image Display */}
         <div className="w-2/3 flex flex-col items-center">

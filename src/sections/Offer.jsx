@@ -62,8 +62,12 @@ const Offer = () => {
         <GiMonsteraLeaf />
       </div>
 
-      <h2 className="text-5xl text-gold font-serif mb-8 relative z-10">
-        Spooky Feels
+      <h2 className="text-5xl text-gold font-serif mb-2 relative z-10  ">
+        Spooky Feels:
+      </h2>
+      <div className="w-96 h-1 bg-gold mx-auto mb-5 opacity-50"></div>
+      <h2 className="text-2xl text-gold font-serif mb-8 relative z-10">
+        What the offer entails
       </h2>
 
       {/* Image Sequence */}

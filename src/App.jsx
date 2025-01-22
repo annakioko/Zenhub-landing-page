@@ -7,6 +7,7 @@ import Header from "./components/Header"; // Import Header
 import Navbar from "./components/Navbar"; // Import Navbar
 import Footer from "./components/Footer"; // Import Footer
 import Hero from "./sections/Hero";
+import Intro from "./sections/Intro";
 
 const App = () => {
   return (
@@ -14,16 +15,17 @@ const App = () => {
       {/* Include Header at the top */}
       <Header />
 
-      {/* Include Navbar under the header */}
+    
       <Navbar />
 
-      {/* Other components */}
+     
       <Hero />
+      <Intro/>
       <Offer />
       <Booking />
       <Gallery />
 
-      {/* Include Footer at the bottom */}
+     
       <Footer />
     </div>
   );
