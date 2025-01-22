@@ -71,17 +71,13 @@ const Hero = () => {
       </div>
 
       {/* Right Side Image */}
-      <div className="w-1/2 relative">
-        <div
-          className="absolute inset-0 "
-          style={{
-            backgroundImage: `url(${face})`,
-            zIndex: "-1",
-            width: "100%",
-            height: "100%",
-            clipPath: "polygon(100% 0, 100% 100%, 40% 100%, 0 50%, 40% 0)", // Thought bubble shape
-          }}
-        ></div>
+      <div className="md:w-1/2 mr-9">
+        <img
+          src={face}
+          alt="Building your online presence"
+          className="w-full h-auto
+                  object-cover"
+        />
       </div>
 
       {/* Modal for expired offer */}
