@@ -51,14 +51,14 @@ const Intro = () => {
 
         {/* Right Section - Short Offer Introduction */}
         <div className="w-1/2 text-left pl-12">
-          <h2 className="text-7xl font-serif text-gold mb-4">
+          <h2 className="text-5xl font-serif text-gold mb-4">
             Spooky Feels offer
           </h2>
-          <h3 className=" text-xl font-serrif text-gold">
+          <h3 className=" text-xl font-serrif text-white">
             Indulge in a bewitching escape that will leave your body relaxed,
             rejuvenated, and spellbound this Halloween season.
           </h3>
-          <p className="text-xl font-sans text-white mr-24">
+          <p className="text-lg font-sans text-white mr-24">
             Dive into an unforgettable experience with our "Spooky Feels"
             package! Unlock eerie, indulgent treatments designed to leave you
             feeling refreshed and enchanted. This limited-time offer is just the

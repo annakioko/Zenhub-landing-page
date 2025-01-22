@@ -48,11 +48,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full py-12 text-white text-center bg-blue overflow-hidden flex items-center justify-between">
+    <section className="relative w-full py-12 text-white text-center bg-blue overflow-hidden flex items-center mt-8 justify-between">
       {/* Left Side Text */}
       <div className="w-1/2 text-left p-8">
         <h2 className="text-5xl text-gold font-serif mb-8">
-          Welcome to the Zen Hub
+          Welcome to Zen Hub
         </h2>
         <p className="font-sans text-xl text-white mb-8">
           Escape the chaos of daily life and step into a world of tranquility at
@@ -63,7 +63,7 @@ const Hero = () => {
           awaits.
         </p>
         <button
-          className="font-sans text-xl text-white bg-blue border-2 border-gold  rounded-full py-4 px-8 mt-8"
+          className="font-sans text-xl text-white bg-blue border-2 border-gold  rounded-full py-4 px-8 mt-8 hover:bg-gold"
           onClick={handleButtonClick}
         >
           Claim Your Moment of Relaxation Today

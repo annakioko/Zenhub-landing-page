@@ -1,4 +1,3 @@
-// App.js
 import React from "react";
 import Offer from "./sections/Offer";
 import Gallery from "./sections/Gallery";
@@ -12,20 +11,29 @@ import Intro from "./sections/Intro";
 const App = () => {
   return (
     <div>
-      {/* Include Header at the top */}
-      <Header />
-
+      {/* Navbar */}
+      
+        <Navbar />
     
-      <Navbar />
 
-     
-      <Hero />
-      <Intro/>
-      <Offer />
-      <Booking />
-      <Gallery />
+      {/* Sections with IDs for navigation */}
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="intro">
+        <Intro />
+      </section>
+      <section id="offer">
+        <Offer />
+      </section>
+      <section id="booking">
+        <Booking />
+      </section>
+      <section id="gallery">
+        <Gallery />
+      </section>
 
-     
+      {/* Footer */}
       <Footer />
     </div>
   );

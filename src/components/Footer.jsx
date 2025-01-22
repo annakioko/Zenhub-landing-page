@@ -11,9 +11,7 @@ const Footer = () => {
       <div className="py-8 text-center">
         {/* Logo */}
         <div className="mb-6">
-          <h1 className="text-2xl font-serif font-bold text-gold">
-            My Website
-          </h1>
+          <h1 className="text-6xl font-serif  text-gold">Zen Hub</h1>
         </div>
 
         {/* Footer Sections */}
@@ -23,8 +21,10 @@ const Footer = () => {
             <h3 className="text-3xl text-gold font-serif font-semibold mb-2">
               Location
             </h3>
+            <p className="text-lg font-sans text-white">123 Innovation Drive</p>
+            <p className="text-lg font-sans text-white">Suite 400</p>
             <p className="text-lg font-sans text-white">
-              123 Main Street, Your City
+              San Francisco, CA 94107
             </p>
           </div>
 
@@ -33,8 +33,8 @@ const Footer = () => {
             <h3 className="text-3xl font-serif text-gold font-semibold mb-2">
               Contact
             </h3>
-            <p className="text-lg font-sans text-white">email@example.com</p>
-            <p className="text-lg font-sans text-white">+123 456 7890</p>
+            <p className="text-lg font-sans text-white">zenhub@gmail.com</p>
+            <p className="text-lg font-sans text-white">+1 (415) 555-1234</p>
           </div>
 
           {/* Socials */}
@@ -47,7 +47,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-800 transition-colors"
+                className="text-white hover:text-gold transition-colors"
               >
                 <FaInstagram size={24} />
               </a>
@@ -55,7 +55,7 @@ const Footer = () => {
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" hover:text-gray-800 transition-colors"
+                className=" text-white hover:text-gold transition-colors"
               >
                 <FaTiktok size={24} />
               </a>
