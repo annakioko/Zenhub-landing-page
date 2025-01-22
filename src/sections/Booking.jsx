@@ -89,24 +89,24 @@ const Booking = () => {
           <input
             type="text"
             placeholder="Your Name"
-            className="mb-4 p-2 w-80 rounded"
+            className="mb-4 p-2 w-80 sm:w-96 md:w-1/2 lg:w-1/3 rounded"
             required
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="mb-4 p-2 w-80 rounded"
+            className="mb-4 p-2 w-80 sm:w-96 md:w-1/2 lg:w-1/3 rounded"
             required
           />
           <input
             type="text"
             placeholder="Preferred Date"
-            className="mb-4 p-2 w-80 rounded"
+            className="mb-4 p-2 w-80 sm:w-96 md:w-1/2 lg:w-1/3 rounded"
             required
           />
           <textarea
             placeholder="Additional Requests"
-            className="mb-4 p-2 w-80 rounded"
+            className="mb-4 p-2 w-80 sm:w-96 md:w-1/2 lg:w-1/3 rounded"
             rows="4"
           />
           <button

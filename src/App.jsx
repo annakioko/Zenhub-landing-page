@@ -12,9 +12,9 @@ const App = () => {
   return (
     <div>
       {/* Navbar */}
-      
+     
         <Navbar />
-    
+     
 
       {/* Sections with IDs for navigation */}
       <section id="hero">

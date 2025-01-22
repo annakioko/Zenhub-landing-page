@@ -1,4 +1,3 @@
-// Gallery.js
 import React, { useState } from "react";
 import sauna from "../assets/sauna.jpg";
 import spa3 from "../assets/spa3.jpg";
@@ -33,9 +32,13 @@ const Gallery = () => {
 
   return (
     <section className="w-full flex flex-col items-center py-8 bg-blue">
-      <h2 className="font-serif mb-1 text-7xl text-gold">GALLERY</h2>
-      <div className="w-96 h-1 bg-gold mx-auto mb-8"></div>
-      <div className="flex w-3/4 justify-between items-center space-x-4">
+      <h2 className="font-serif mb-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold text-center">
+        GALLERY
+      </h2>
+      <div className="w-24 sm:w-32 md:w-40 lg:w-48 h-1 bg-gold mx-auto mb-8"></div>
+
+      {/* Desktop Layout */}
+      <div className="hidden lg:flex w-3/4 justify-between items-center space-x-4">
         {/* Left Section: Large Image Display */}
         <div className="w-2/3 flex flex-col items-center">
           <img
@@ -72,6 +75,54 @@ const Gallery = () => {
               src={image.src}
               alt={image.name}
               className={`w-32 h-32 object-cover rounded-xl ${
+                index === currentImageIndex
+                  ? "border-gray-700"
+                  : "border-transparent"
+              }`}
+              onClick={() => setCurrentImageIndex(index)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="lg:hidden w-3/4 flex flex-col items-center">
+        {/* Large Image Display */}
+        <div className="w-full flex flex-col items-center">
+          <img
+            src={galleryImages[currentImageIndex].src}
+            alt={galleryImages[currentImageIndex].name}
+            className="w-full h-96 object-cover rounded-xl"
+          />
+          <p className="mt-4 text-xl font-sans font-semibold text-gold">
+            {galleryImages[currentImageIndex].name}
+          </p>
+        </div>
+
+        {/* Navigation Arrows */}
+        <div className="flex space-x-4 my-4">
+          <button
+            onClick={handlePrev}
+            className="p-3 rounded-full bg-transparent border border-gold hover:bg-gold transition-all text-white"
+          >
+            <span className="text-2xl font-bold">&#8592;</span>
+          </button>
+          <button
+            onClick={handleNext}
+            className="p-3 rounded-full bg-transparent border border-gold hover:bg-gold transition-all text-white"
+          >
+            <span className="text-2xl font-bold">&#8594;</span>
+          </button>
+        </div>
+
+        {/* Thumbnails */}
+        <div className="w-full grid grid-cols-3 gap-4">
+          {galleryImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.name}
+              className={`w-full h-24 object-cover rounded-xl ${
                 index === currentImageIndex
                   ? "border-gray-700"
                   : "border-transparent"
