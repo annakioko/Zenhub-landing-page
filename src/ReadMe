@@ -1,0 +1,47 @@
+README for Zen Hub landing page
+Project Name: Zen Hub landing page
+This landing page is designed to promote Zen Hub Spa's exclusive Halloween Special Offer, delivering a spooky yet luxurious experience for customers looking for relaxation during the Halloween season. The page features smooth navigation, a visually enticing design, and focused sections for customers to explore and take advantage of the offer.
+
+Features
+Smooth Scroll Navigation: The fixed navigation bar allows seamless scrolling to different sections on the page.
+Hero Section: A large, captivating banner with an enticing Halloween-themed message and call-to-action.
+Intro/Overview Section: Gives a small introduction of the offer available
+Offer Section: Special details of the Halloween offer, including package details, prices, and key features.
+Booking Section: A booking form that makes it easy for customers to schedule their treatments.
+Gallery Section: A collection of images showcasing the spa ambiance and previous treatments to add visual appeal.
+Footer: Includes the spa’s contact details, social media links, and additional information.
+
+Technologies Used
+React.js: For building a dynamic, interactive user interface.
+Tailwind CSS: For rapid, responsive styling of the page.
+React Icons: For social media icons (Instagram and TikTok).
+JavaScript (ES6+): For handling dynamic behaviors and interactions.
+HTML5: For semantic structure and accessibility.
+
+Installation and Setup
+Clone the Repository
+
+
+git clone https://github.com/your-username/zenhub-landing-page.git
+cd zenhub-ladning-page
+Install Dependencies  then run:
+
+
+npm install
+Run the Project
+
+
+npm start
+Open in Browser Open your browser and navigate to http://localhost:3000 to view the landing page.
+
+Usage
+Navigation: Use the fixed navigation bar at the top to scroll to different sections of the page: Home, Offer, Booking, Gallery, and Contact.
+Exclusive Halloween Offer: In the "Offer" section, you’ll find detailed information about the Halloween special packages, including discounts and unique offerings.
+Book Now: Use the booking form in the "Booking" section to schedule a Halloween treatment or spa experience.
+Gallery: Check out the gallery for images of the spa’s ambiance, perfect for setting the Halloween mood.
+
+Customization
+Change Images: Replace the images in the public/images directory for the hero, offer, or gallery sections.
+Styling: Modify Tailwind CSS classes or add custom styles in the index.css file for specific design changes.
+Update Text: Adjust the text in the Offer.js and Hero.js sections to reflect any changes in the promotion.
+
